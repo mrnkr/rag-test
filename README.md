@@ -25,7 +25,7 @@ Since `llama3.1` is noticeably lighter than `gpt-oss:20b` and the number of quer
 ### Installation
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:mrnkr/rag-test.git
 cd rag-test
 pip install -r requirements.txt
 ```
