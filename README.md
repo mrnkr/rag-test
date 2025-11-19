@@ -39,7 +39,12 @@ pip install -r requirements.txt
 
 ## Usage
 
-`python src/main.py`
+```bash
+make load_docs
+make serve
+```
+
+Open `http://127.0.0.1:8000/docs#/default/ask_question__post` in your browser to see the swagger docs for the API that exposes the model.
 
 ## Project Structure
 
