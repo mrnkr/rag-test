@@ -39,12 +39,25 @@ pip install -r requirements.txt
 
 ## Usage
 
+1. Load docs into the vector store - this project uses chroma with filesystem persistence.
+
 ```bash
 make load_docs
+```
+
+2. Serve the API.
+
+```bash
 make serve
 ```
 
 Open `http://127.0.0.1:8000/docs#/default/ask_question__post` in your browser to see the swagger docs for the API that exposes the model.
+
+3. Serve the chat UI.
+
+```bash
+make ui
+```
 
 ## Project Structure
 
@@ -53,7 +66,6 @@ rag-test/
 ├── README.md
 ├── requirements.txt
 ├── src/
-|  ├── main.py
 ```
 
 ## Contributing

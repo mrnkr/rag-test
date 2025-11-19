@@ -50,6 +50,7 @@ def prompt_with_context(request: ModelRequest) -> str:
     return system_message
 
 
+ui_agent = create_agent(model, tools=[], middleware=[prompt_with_context]) # pyright: ignore[reportUnknownVariableType, reportUnknownArgumentType]
 agent = create_agent(model, tools=[], middleware=[prompt_with_context], response_format=ToolStrategy(ResponseDto)) # pyright: ignore[reportUnknownVariableType, reportUnknownArgumentType]
 
 # agent = create_agent(model, tools, system_prompt=prompt) # pyright: ignore[reportUnknownVariableType]
