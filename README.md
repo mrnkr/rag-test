@@ -19,7 +19,7 @@ Since `llama3.1` is noticeably lighter than `gpt-oss:20b` and the number of quer
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.8+ (tested with 3.11.7)
 - Required dependencies (see `requirements.txt`)
 
 ### Installation
@@ -27,6 +27,13 @@ Since `llama3.1` is noticeably lighter than `gpt-oss:20b` and the number of quer
 ```bash
 git clone git@github.com:mrnkr/rag-test.git
 cd rag-test
+
+pyenv install 3.11.7 # if you don't have it already
+pyenv local 3.11.7
+
+python -m venv .venv
+source .venv/bin/activate
+
 pip install -r requirements.txt
 ```
 
